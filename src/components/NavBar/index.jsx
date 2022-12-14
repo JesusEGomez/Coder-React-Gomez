@@ -14,6 +14,9 @@ const NavBar =({Children})=>{
 
         <img src= {logo} alt="logo" className="logo" />
         <img src={carrito} className=" carrito" alt="carrito" />
+            
+        
+        
 
         
         
