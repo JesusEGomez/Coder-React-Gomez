@@ -11,38 +11,101 @@
         -webkit-box-shadow: 0px 9px 24px -10px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 9px 24px -10px rgba(0,0,0,0.75);
         box-shadow: 0px 9px 24px -10px rgba(0,0,0,0.75);
+        max-width: 300px;
+        min-height: 580px;
     }
     .card-image{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     .card-content{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-height: 307px;
     }
     .card-title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color:#008eff ;
     }
     .card-description{
         color: #00a7f5;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .card-price{
         color: #00a7f5;
         font-size: 1.1rem;
+        font-weight: bold;
     }
     .card-stock{
         color: #00a7f5;
         font-size: 1rem;
     }
     .card-button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
     }
     .card-button-minus{
+        border-radius: 50%;
+        background-color: #BA1200;
+        padding: 5px;
+        color: #fff;
+        width: 2rem;
+        height: 2rem;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: solid #536B78 1px;
         
     }
-    .text{}
-    .card-input{}
-    .card-button-plus{}
+    input{
+        text-align: center;
+    }
+    .card-input{
+        text-align: center;
+        background-color: #fff;
+        border: solid #536B78 1px;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+    .card-button-plus{
+        border-radius: 50%;
+        background-color: #BA1200;
+        padding: 5px;
+        color: #fff;
+        width: 2rem;
+        height: 2rem;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: solid #536B78 1px;
+    }
+    .card-button-plus:hover{
+        background-color: #536B78;
+        color: white;
+    }
+    .card-button-minus:hover{
+        background-color: #536B78;
+        color: white;
+    }
+
+    .card-button-plus:active{
+        background-color: #BA1200;
+        box-shadow: 0 1px #666;
+        transform: translateY(1px);
+    
+    }
+    .card-button-minus:active{
+        background-color: #BA1200;
+        box-shadow: 0 1px #666;
+        transform: translateY(1px);
+    
+    }

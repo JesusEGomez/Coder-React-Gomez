@@ -41,18 +41,37 @@ background-color: #8168e5;
 
 }
 
-.carrito{
+.cart{
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-container{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    
 }
 
-.carrito:hover{
+.number-cart{
+    background-color: #BA1200;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    
+
+}
+
+.cart:hover{
     background-color: #536B78;
     border-radius: 50%;
     color: white;
 }
 
-.carrito:active{
+.cart:active{
     background-color: #BA1200;
     box-shadow: 0 5px #666;
     transform: translateY(2px);

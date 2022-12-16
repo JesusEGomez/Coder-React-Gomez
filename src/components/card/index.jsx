@@ -16,6 +16,7 @@ const card = ({product})=>{
                 <button className="card-button-minus">-</button>
                 <input type="text" 
                 className="card-input"
+                placeholder="0"
                 />
                 <button className="card-button-plus">+</button>
             </div>

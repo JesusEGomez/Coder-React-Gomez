@@ -34,7 +34,7 @@ export const PRODUCTS = [
 
     categoryId: 3,
 
-    description: "Familia de componentes de perfumería que comparten rasgos comunes, pero que muestran diferentes caracteres dependiendo de las circunstancias y nuestras emociones. Su aroma remite a los matices cálidos de la piel suave, en cambio para otros remite a un aroma más salvaje y sexy pero primitivo, vital e inequívocamente delicioso.",
+    description: "Su aroma remite a los matices cálidos de la piel suave, en cambio para otros remite a un aroma más salvaje y sexy pero primitivo, vital e inequívocamente delicioso.",
 
     image: 'https://saphirus.com.ar/wp-content/uploads/2022/04/sahumerios-musk.jpg',
 
