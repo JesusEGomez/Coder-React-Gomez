@@ -77,7 +77,7 @@ export const PRODUCTS = [
 {
     id: 6, 
 
-    categoryId: 3,
+    categoryId: 1,
 
     description: "Potente aroma cítrico caracterizado por la frescura del pomelo rosado y la combinación de notas cítricas del limón y la naranja silvestre.",
 
@@ -92,7 +92,7 @@ export const PRODUCTS = [
 {
     id: 7, 
 
-    categoryId: 3,
+    categoryId: 1,
 
     description: "Fragancia que nos envuelve en su salida con uvas coloradas y arándanos acompañados por moras azules. Culminando con un aroma inconfundible de vainilla cremosa.",
 
@@ -107,7 +107,7 @@ export const PRODUCTS = [
 {
     id: 8, 
 
-    categoryId: 3,
+    categoryId: 1,
 
     description: "Fragancia intensa y diferente. Notas Frutadas, banana, flores suaves y delicadas juegan para dar vida a esta creación energizante.",
 
@@ -122,7 +122,7 @@ export const PRODUCTS = [
 {
     id: 9, 
 
-    categoryId: 3,
+    categoryId: 1,
 
     description: "Fragancia inspirada en el mundo del vino. Frutos rojos y negros, como la ciruela y la mora, son envueltos por una nota de cedro y roble donde las especias dulces juegan un papel principal mentolado y pino con una base de almizcle blanco , cedro texas y sándalo.",
 

@@ -30,7 +30,11 @@
 }
 
 .Home-subTitle{
-    color: #BA1200;
+    /* color: #BA1200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    text-decoration: underline #00a7f5; */
+    background: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    color: #BA1200;
+    background: #FFFFFF;
 }
