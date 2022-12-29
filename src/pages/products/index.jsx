@@ -26,7 +26,7 @@ const Products = () => {
                 <div className="products-container">
                     {PRODUCTS.map((product) => (
                         
-                    <Card product={product.categoryId === category || category === ""? product:null} key={product.id} onSelect={onHandlerSelect} /> 
+                    <Card product={product.categoryId === category || category === ""? product:null } key={product.id} onSelect={onHandlerSelect} /> 
                     ))}
                 </div>
             </div>
