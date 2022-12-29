@@ -12,7 +12,7 @@ function App() {
       <div className='cart-link'><Link to='/cart'>Go to cart</Link></div>
       
     </NavBar>
-    <Router/>
+    <Router />
     
     </div>
 

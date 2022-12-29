@@ -43,5 +43,95 @@ export const PRODUCTS = [
     price: "$455,00",
 
     stock: 3
+},
+{
+    id: 4, 
+
+    categoryId: 3,
+
+    description: "Proveniente de la planta de albahaca, de persistente aroma y notas mentoladas con un olor picante.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/04/sahumerios-sweetbasil.jpg',
+
+    name: "Sahumerios Sweet Basil  ",
+
+    price: "$455,00",
+
+    stock: 3
+},
+{
+    id: 5, 
+
+    categoryId: 3,
+
+    description: "Terroso y herbáceo aroma con un rico corazón verde y una base de madera.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/04/sahumerios-patchouli.jpg',
+
+    name: "Sahumerios Patchouli ",
+
+    price: "$455,00",
+
+    stock: 3
+},
+{
+    id: 6, 
+
+    categoryId: 3,
+
+    description: "Potente aroma cítrico caracterizado por la frescura del pomelo rosado y la combinación de notas cítricas del limón y la naranja silvestre.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/11/saphirus-textil-pomelo-rosado.jpg',
+
+    name: "Textil Pomelo Rosado",
+
+    price: "$434,00",
+
+    stock: 3
+},
+{
+    id: 7, 
+
+    categoryId: 3,
+
+    description: "Fragancia que nos envuelve en su salida con uvas coloradas y arándanos acompañados por moras azules. Culminando con un aroma inconfundible de vainilla cremosa.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/09/Saphirus-textil-uva-y-arandanos.jpg',
+
+    name: "Textil Uva y Arándanos",
+
+    price: "$434,00",
+
+    stock: 3
+},
+{
+    id: 8, 
+
+    categoryId: 3,
+
+    description: "Fragancia intensa y diferente. Notas Frutadas, banana, flores suaves y delicadas juegan para dar vida a esta creación energizante.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/09/Saphirus-textil-mix-tropical.jpg',
+
+    name: "Textil Mix Tropical",
+
+    price: "$434,00",
+
+    stock: 3
+},
+{
+    id: 9, 
+
+    categoryId: 3,
+
+    description: "Fragancia inspirada en el mundo del vino. Frutos rojos y negros, como la ciruela y la mora, son envueltos por una nota de cedro y roble donde las especias dulces juegan un papel principal mentolado y pino con una base de almizcle blanco , cedro texas y sándalo.",
+
+    image: 'https://saphirus.com.ar/wp-content/uploads/2022/04/saphirus-textil-cereza-malbec.jpg',
+
+    name: "Textil Cereza Malbec ",
+
+    price: "$434,00",
+
+    stock: 3
 }
 ]

@@ -27,8 +27,8 @@ const NavBar =({Children})=>{
             
             </div>
         
-            <button className="button "><Link className="home" to='/'>Home</Link></button>
-            <button className="button products">Productos</button>
+            <button className="button"><Link className="home" to='/'>Home</Link></button>
+            <button className="button"><Link className="products" to="/products">Productos</Link></button>
             <button className="button us">Nosotros</button>
             <button className="button contact">Contacto</button>
             
