@@ -6,13 +6,16 @@ import { Link } from 'react-router-dom';
 
 
 
-const NavBar =({Children})=>{
+
+const NavBar =({Children, onHandlerCart})=>{
     return(
 
+    
         
     <div className="navbar">
+        
         <div className="contenedorImagenes">
-        <Link className="home" to='/'><img src= {logo} alt="logo" className="logo" /></Link>
+        <img src= {logo} alt="logo" className="logo" />
         
         </div>
 
@@ -22,7 +25,7 @@ const NavBar =({Children})=>{
 
             <div className="cart-container">
                 <div className="number-cart">0</div>
-                <img src={cart} className=" cart" alt="cart" />
+                <img src={cart} className=" cart" alt="cart" onClick={onHandlerCart} />
                 
             
             </div>

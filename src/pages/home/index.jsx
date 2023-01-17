@@ -2,6 +2,8 @@ import './styles.css';
 import { PRODUCTS } from '../../constans/data/products'
 import Card from '../../components/card';
 import { useNavigate } from 'react-router-dom';
+// import {Firestore, collection,getDocs, getFirestore} from 'firebase/firestore';
+// import { useEffect } from 'react';
 
 
 const Home = () => {
@@ -9,6 +11,20 @@ const Home = () => {
     const onHandlerSelect = (product) => {
         navigate(`/products/${product.id}`, {state: product});
     };
+    // useEffect(()=>{
+    //     const db = getFirestore();
+
+    //     const products = collection (db, "products");
+    //     getDocs(products)
+    //     .then((snapshot)=>{
+    //         const result = snapshot.docs.map((doc)=>(doc.data()))
+    //         console.log(result);
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error)
+    //     } );
+    // });
+    
     return (
         <div className="home-container">
             <div className="home-header">
