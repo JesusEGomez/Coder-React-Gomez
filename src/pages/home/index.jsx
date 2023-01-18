@@ -29,7 +29,7 @@ const Home = () => {
         <div className="home-container">
             <div className="home-header">
                 <h2 className="Home-subTitle">Nuevos Ingresos</h2>
-                <div className="products-container">
+                <div className="products-container-home">
                     {PRODUCTS.map((product) => (
                         
                     <Card product={product.id <4? product:null} key={product.id} onSelect={onHandlerSelect} /> 

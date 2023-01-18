@@ -1,22 +1,16 @@
 import './styles.css';
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
+import Card from '../../components/card';
 
 
 
 const Detail = () => {
-    const {state} = useLocation()
-    console.log('state', state)
+    const {state} = useLocation();
     return (
         <div className="detail-container">
-            <img src={state.image} alt={state.name} className='detail-image' /> 
-            <div className='info-container'>
-                <h2 className='detail-name'>{state.name}</h2>
-                <h3>{state.price}</h3>
-                <p>{state.description}</p>
-
-            </div>
-
+            {state ? (<Card product={state}  key={state.id} onSelect={()=>{} } type="plusCard"/>): null} 
+            
         </div>
     );
 }

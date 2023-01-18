@@ -3,10 +3,14 @@
     flex-wrap: wrap;
     max-width: 100%;
     margin-top: 10px;
-    align-items: center;
     justify-content: center;
 
+}
 
+.allProducts-container{
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
 }
 .category{
     max-width: 100%;
@@ -42,4 +46,11 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 
+}
+.products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
