@@ -4,7 +4,10 @@ import Router from "./router";
 import NavBar from "./components/NavBar";
 import Sidebar from './components/sidebar';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { CartProvider } from './context';
+
+
+
 
 
 function App() {
@@ -13,21 +16,25 @@ function App() {
   const onHandlerSideBar = () => {
     setOpen(!isOpen);
   };
+
   return (
     <div className="container">
-
-    <Sidebar onClose={onHandlerSideBar} isOpen={isOpen}>
-      <Link to={`/cart`} ><button>Ir al Carrito</button></Link>
-    </Sidebar>
+    <CartProvider>
+      <Sidebar 
+        onClose={onHandlerSideBar} 
+        isOpen={isOpen}
+        />
       
-    <NavBar onHandlerCart={onHandlerSideBar}>
+      <NavBar 
+        onHandlerCart={onHandlerSideBar}
+      >
   
-    </NavBar>
+      </NavBar>
 
-    
+      <Router />
 
-    <Router />
-    
+    </CartProvider>
+
     </div>
 
     

@@ -1,13 +1,18 @@
 
 import "./styles.css"
 import logo from "./img/Luz de luna-logo.png"
-import cart from "./img/carrito.png"
+import cartLogo from "./img/carrito.png"
 import { Link } from 'react-router-dom';
+import { CartContext } from "../../context";
+import { useContext } from "react";
 
 
 
 
-const NavBar =({Children, onHandlerCart})=>{
+const NavBar =({ onHandlerCart })=>{
+
+    const {cart} = useContext(CartContext);
+
     return(
 
     
@@ -24,14 +29,13 @@ const NavBar =({Children, onHandlerCart})=>{
         <div className="contenedorbutton">
 
             <div className="cart-container">
-                <div className="number-cart">0</div>
-                <img src={cart} className=" cart" alt="cart" onClick={onHandlerCart} />
+                <div className="number-cart">{cart.length}</div>
+                <img src={cartLogo} className=" cart" alt="cart" onClick={onHandlerCart} />
                 
-            
             </div>
         
-            <button className="button"><Link className="home" to='/'>Home</Link></button>
-            <button className="button"><Link className="products" to="/products">Productos</Link></button>
+            <Link className="home" to='/'><button className="button">Home</button></Link>
+            <Link className="products" to="/products"><button className="button">Productos</button></Link>
             <button className="button us">Nosotros</button>
             <button className="button contact">Contacto</button>
             
