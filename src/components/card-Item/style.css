@@ -12,10 +12,29 @@
     max-height: 100px;
     margin: 5px;
 }
-.cart-item-details{}
-.cart-name{}
-.cart-price{}
-.cart-quantity{}
+.cart-item-details{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+}
+.cart-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cart-price{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.cart-quantity{
+    font-weight: bold;
+    font-size: 1rem;
+}
 .cart-item-action{}
 .cart-item-remove{
+	cursor: pointer;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.cart-item-remove:active{
+	color: white;
 }

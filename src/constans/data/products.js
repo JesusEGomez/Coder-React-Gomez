@@ -10,7 +10,7 @@ export const PRODUCTS = [
 
     name: "Textil Bad Man",
 
-    price: "$434,00",
+    price: 434,
 
     stock: 20
 },
@@ -25,7 +25,7 @@ export const PRODUCTS = [
 
     name: "Pack Premium Deco Red Blood",
 
-    price: "$3.205,00",
+    price: 3.205,
 
     stock: 3
 },
@@ -40,7 +40,7 @@ export const PRODUCTS = [
 
     name: "Sahumerios Musk ",
 
-    price: "$455,00",
+    price: 455,
 
     stock: 3
 },
@@ -55,7 +55,7 @@ export const PRODUCTS = [
 
     name: "Sahumerios Sweet Basil  ",
 
-    price: "$455,00",
+    price: 455,
 
     stock: 3
 },
@@ -70,7 +70,7 @@ export const PRODUCTS = [
 
     name: "Sahumerios Patchouli ",
 
-    price: "$455,00",
+    price: 455,
 
     stock: 3
 },
@@ -85,7 +85,7 @@ export const PRODUCTS = [
 
     name: "Textil Pomelo Rosado",
 
-    price: "$434,00",
+    price: 434,
 
     stock: 3
 },
@@ -100,7 +100,7 @@ export const PRODUCTS = [
 
     name: "Textil Uva y Arándanos",
 
-    price: "$434,00",
+    price: 434,
 
     stock: 3
 },
@@ -115,7 +115,7 @@ export const PRODUCTS = [
 
     name: "Textil Mix Tropical",
 
-    price: "$434,00",
+    price: 434,
 
     stock: 3
 },
@@ -130,7 +130,7 @@ export const PRODUCTS = [
 
     name: "Textil Cereza Malbec ",
 
-    price: "$434,00",
+    price: 434,
 
     stock: 3
 }

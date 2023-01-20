@@ -7,6 +7,7 @@ const initialState = {
     getItemQuantity: () => {},
     onIncreaseItem: () => {},
     onDecreaseItem: () => {},
+    total:0
 }
 
 export const CartContext = createContext(initialState);
@@ -56,8 +57,18 @@ export const CartProvider = ({children}) => {
         return cart?.find((product) => product.id === id)?.quantity || 0;
     }
 
+    const total = cart?.reduce((acc, product) => {
+        return acc + (product.price * product.quantity);
+    }, 0)
+
+    const onRemoveItem = (id) => {
+        setCart(currentCar => {
+            return currentCar.filter((product) => product.id !== id)
+        })
+    }
+
     return(
-        <CartContext.Provider value={{cart, setCart, onDecreaseItem, onIncreaseItem, getItemQuantity}}>
+        <CartContext.Provider value={{cart, setCart, onDecreaseItem, onIncreaseItem, getItemQuantity, total, onRemoveItem}}>
             {children}
         </CartContext.Provider>
     )

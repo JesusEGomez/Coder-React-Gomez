@@ -7,7 +7,7 @@ const CartItem = ({id, image, name, price, quantity, onRemoveItem}) => {
             <img className="cart-item-image" src={image} alt={name}/>
             <div className="cart-item-details">
                 <h3 className="cart-name">{name}</h3>
-                <p className="cart-price">{price}</p>
+                <p className="cart-price">${price}</p>
                 <p className="cart-quantity">Cantidad: {quantity}</p>
             </div>
             <div className="cart-item-action">

@@ -13,7 +13,7 @@ const card = ({product, onSelect, type="minusCard", decreaseQty, increaseQty, nu
                     {type === "plusCard" && (
                         <h2 className="card-desciption">{description}</h2>
                     )} 
-                    <p className="card-price">{price}</p>
+                    <p className="card-price">${price}</p>
                     <p  className="card-stock"> {stock} in stock</p>
                 </div>
                 {type === "plusCard" && (

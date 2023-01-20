@@ -36,8 +36,6 @@ const NavBar =({ onHandlerCart })=>{
         
             <Link className="home" to='/'><button className="button">Home</button></Link>
             <Link className="products" to="/products"><button className="button">Productos</button></Link>
-            <button className="button us">Nosotros</button>
-            <button className="button contact">Contacto</button>
             
 
 

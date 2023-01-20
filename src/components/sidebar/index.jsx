@@ -5,8 +5,8 @@ import { CartContext } from "../../context"
 import { useContext } from "react"
 import CartItem from "../card-Item"
 
-const Sidebar = ({onClose, isOpen}) =>{
-    const {cart} = useContext(CartContext)
+const Sidebar = ({onClose, isOpen,}) =>{
+    const {cart, total, onRemoveItem} = useContext(CartContext)
     return(
         <div className="sideBar"
         style={{
@@ -18,10 +18,13 @@ const Sidebar = ({onClose, isOpen}) =>{
             {cart.length === 0 ? (<p className="empty-cart>">Tu carrito esta vacio</p>)
             : (
                 cart.map((item) => (
-                    <CartItem key={item.id} {...item} />
+                    <CartItem key={item.id} {...item} onRemoveItem={onRemoveItem} />
                 )
                 )
             )}
+            <h2>Total: </h2>
+            <h3>${total}</h3>
+
             <Link to={`/cart`} ><button>Ir al Carrito</button></Link>
         </div>
     )
